@@ -1,0 +1,116 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    background-color: black;
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+}
+
+.card {
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    padding: 2rem;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1rem;
+
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search-bar {
+    width: calc(100% - 100px);
+    outline: none;
+    border:2px solid black;
+    padding: 0.5em;
+    border-radius: 20px;
+    background-color: #7c7c7c2b;
+    color: white;
+    font-size: 120%;
+
+
+}
+.search-bar:hover{
+    /* border: 3px solid rgba(0, 0, 255, 0.55); */
+    border: 2px solid blue;
+    box-shadow: inset 4px  2px 2px blue; 
+    /* opacity: 0.7; */
+    /* box-shadow: 3px 3px red, -0.4em 0 .4em red; */
+    overflow: hidden;
+}
+
+.search>button {
+    margin: 1.5em;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    outline: none;
+    background-color: #7c7c7c2b;
+    color: wheat;
+}
+
+.search button:hover {
+    background-color: #7c7c7cb3;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    margin: 8px 0px;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.humidity {
+    margin: 8px 0px;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.wind {
+    margin: 8px 0px;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+
+}
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading....";
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
