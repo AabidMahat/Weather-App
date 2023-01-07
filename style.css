@@ -118,4 +118,21 @@ img {
     top: 0px;
     left: 20px;
 }
+@media (width>1440px) {
+    body{
+        background-size: cover;
+        background-position:  center;
+        background-repeat: no-repeat;
+    }
+}
+@media (width>400px) {
+    body{
+        background-size: cover;
+        background-position:  center;
+        background-repeat: no-repeat;
+    }
+    .card{
+        width: 350px;
+    }
+}
 // Code Completed
